@@ -130,7 +130,7 @@ contract wallet {
         CoreWallet(walletAddress).transferOwnerShip(msg.sender, to);
     }
 
-    function getTokensName()
+    /*function getTokensName()
         public
         view
         returns (string[] memory, string[] memory)
@@ -143,7 +143,7 @@ contract wallet {
             symbol[i] = ERC20(_tokens[i]).symbol();
         }
         return (name, symbol);
-    }
+    }*/
 
     function updateFactoryAddress(address _factoryAddress) public OnlyOwner {
         factoryAddress = _factoryAddress;
